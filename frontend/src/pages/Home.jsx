@@ -7,6 +7,7 @@ import './Home.css';
 import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/about';
 import ServicesList from '../components/Services/ServicesList';
+import DoctorList from '../components/theDoctors/DoctorList';
 
 const Home = () => {
   const [gradient, setGradient] = useState('');
@@ -138,6 +139,18 @@ const Home = () => {
          <ServicesList/>
         </div>
       </section>
+
+<section>
+  <div className="container">
+    <div className='xl:w-[470px] mx-auto'>
+      <h2 className='text-center heading'> OUR DOCTORS</h2>
+    <p className='text-center text_para'>World-class care for everyone.Our health System offers unmatched,export health care.</p>
+    </div>
+
+    <DoctorList/>
+    
+  </div>
+</section>
     </>
   );
 };
