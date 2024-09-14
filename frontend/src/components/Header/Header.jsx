@@ -63,15 +63,16 @@ const Header = () => {
         </nav>
 
         {/* Profile and Login Section */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center ">
           <Link to="/">
-            <figure className="w-[35px] h-[35px] rounded-full cursor-pointer overflow-hidden">
+            {/* <figure className="w-[35px] h-[35px] rounded-full cursor-pointer overflow-hidden"> */}
+            <figure className=" h-[35px] rounded-full cursor-pointer overflow-hidden">
               <img src={user} className="object-cover w-full h-full" alt="User" />
             </figure>
           </Link>
 
           <Link to="/login">
-            <button className="bg-primaryColor py-2 px-6 text-black font-semibold h-[44px] flex items-center justify-center rounded-full">
+            <button className="but_obj bg-primaryColor px-6 text-black font-semibold h-[44px] flex items-center justify-center rounded-full ">
              REGISTER/LOGIN
             </button>
           </Link>
