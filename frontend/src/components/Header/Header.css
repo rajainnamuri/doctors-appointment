@@ -60,3 +60,7 @@ body {
       display: block; 
     }
   }
+
+  .but_obj{
+    padding: 0px;
+  }
