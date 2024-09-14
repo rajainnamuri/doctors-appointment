@@ -65,7 +65,8 @@ const Header = () => {
         {/* Profile and Login Section */}
         <div className="flex items-center gap-4">
           <Link to="/">
-            <figure className="w-[35px] h-[35px] rounded-full cursor-pointer overflow-hidden">
+            {/* <figure className="w-[35px] h-[35px] rounded-full cursor-pointer overflow-hidden"> */}
+            <figure className="h-[35px] rounded-full cursor-pointer overflow-hidden">
               <img src={user} className="object-cover w-full h-full" alt="User" />
             </figure>
           </Link>
