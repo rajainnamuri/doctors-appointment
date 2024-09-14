@@ -36,8 +36,8 @@ body {
       top: 0;
       left: 0;
       z-index: 100;
-      background: rgba(0, 0, 0, 0.5); /* Updated for better readability */
-      display: none;/* Hidden by default */
+      background: rgba(0, 0, 0, 0.5); 
+      display: none;
     }
   
     .menu {
@@ -46,8 +46,8 @@ body {
       position: absolute;
       top: 0;
       right: 0;
-      background: url("../../assets/images/bg.png") no-repeat center center; /* Placeholder background image */
-      background-size: cover; /* Ensure image covers entire area */
+      background: url("../../assets/images/bg.png") no-repeat center center;
+      background-size: cover; 
       z-index: 200;
       display: flex;
       flex-direction: column;

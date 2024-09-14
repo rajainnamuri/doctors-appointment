@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import home2 from '../assets/images/home2.jpg';
 import doc from '../assets/images/doc.png';
-import appoint from '../assets/images/appoint.png'
+import appoint from '../assets/images/appoint.png';
 import './Home.css';
 import { BsArrowRight } from 'react-icons/bs';
-import About from '../components/About/about';
+
+import About from '../components/About/About';
 import ServicesList from '../components/Services/ServicesList';
 import DoctorList from '../components/theDoctors/DoctorList';
 
@@ -73,84 +74,85 @@ const Home = () => {
       </section>
 
       <section>
-  <div className="container">
-    <div className="text-center">
-      <h2 className="heading">Providing the best medical services</h2>
-      <p className="paragraph ">
-        World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
-      </p>
-    </div>
-    <div className="grid">
-      <div className="service-item">
-        <div className="icon-container">
-          <img src={doc} alt="Doctor" />
-        </div>
-        <h2 className="service-title">Find a Doctor</h2>
-        <p className="service-desc">
-          World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
-        </p>
-        <Link to="/doctors" className="icon-link">
-        <div className="circle-icon">
-          <BsArrowRight className="arrow-icon" />
-          </div>
-        </Link>
-      </div>
-      <div className="service-item">
-        <div className="icon-container">
-          <img src={doc} alt="Doctor" />
-        </div>
-        <h2 className="service-title">Find a Doctor</h2>
-        <p className="service-desc">
-          World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
-        </p>
-        <Link to="/doctors" className="icon-link">
-        <div className="circle-icon">
-          <BsArrowRight className="arrow-icon" />
-          </div>
-        </Link>
-      </div>
-      <div className="service-item">
-        <div className="icon-container">
-          <img src={appoint} alt="Doctor" />
-        </div>
-        <h2 className="service-title">Book Doctor Appointment</h2>
-        <p className="service-desc">
-          World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
-        </p>
-        <Link to="/doctors" className="icon-link">
-        <div className="circle-icon">
-          <BsArrowRight className="arrow-icon" />
-          </div>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <About/>
-
-      <section>
         <div className="container">
-          <div className='xl:w-[470px] mx-auto'>
-            <h2 className='text-center heading'>OUR MEDICAL SERVICES</h2>
-            <p className='text-center text_para'> World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.</p>
+          <div className="text-center">
+            <h2 className="heading">Providing the best medical services</h2>
+            <p className="paragraph">
+              World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
+            </p>
           </div>
-
-         <ServicesList/>
+          <div className="grid">
+            <div className="service-item">
+              <div className="icon-container">
+                <img src={doc} alt="Doctor icon" />
+              </div>
+              <h2 className="service-title">Find a Doctor</h2>
+              <p className="service-desc">
+                World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
+              </p>
+              <Link to="/doctors" className="icon-link">
+                <div className="circle-icon">
+                  <BsArrowRight className="arrow-icon" />
+                </div>
+              </Link>
+            </div>
+            <div className="service-item">
+              <div className="icon-container">
+                <img src={doc} alt="Doctor icon" />
+              </div>
+              <h2 className="service-title">Consult a Specialist</h2>
+              <p className="service-desc">
+                World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
+              </p>
+              <Link to="/specialists" className="icon-link">
+                <div className="circle-icon">
+                  <BsArrowRight className="arrow-icon" />
+                </div>
+              </Link>
+            </div>
+            <div className="service-item">
+              <div className="icon-container">
+                <img src={appoint} alt="Appointment icon" />
+              </div>
+              <h2 className="service-title">Book Doctor Appointment</h2>
+              <p className="service-desc">
+                World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
+              </p>
+              <Link to="/appointments" className="icon-link">
+                <div className="circle-icon">
+                  <BsArrowRight className="arrow-icon" />
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
-<section>
-  <div className="container">
-    <div className='xl:w-[470px] mx-auto'>
-      <h2 className='text-center heading'> OUR DOCTORS</h2>
-    <p className='text-center text_para'>World-class care for everyone.Our health System offers unmatched,export health care.</p>
-    </div>
+      <About />
 
-    <DoctorList/>
-    
-  </div>
-</section>
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="text-center heading">OUR MEDICAL SERVICES</h2>
+            <p className="text-center text_para">
+              World-class care for everyone. Our health system offers unmatched expert healthcare from the lab to the clinic.
+            </p>
+          </div>
+          <ServicesList />
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="text-center heading">OUR DOCTORS</h2>
+            <p className="text-center text_para">
+              World-class care for everyone. Our health system offers unmatched, expert healthcare.
+            </p>
+          </div>
+          <DoctorList />
+        </div>
+      </section>
     </>
   );
 };

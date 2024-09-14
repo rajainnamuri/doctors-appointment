@@ -1,9 +1,17 @@
 import React from 'react'
+import {services} from "../assets/data/services";
+import ServicesCard from '../components/Services/ServicesCard';
 
 const Services = () => {
-  return (
-    <div>Services</div>
-  )
+  return <section>
+    <div className="container">
+    <div className='services-list'>
+      {services.map((item, index) => (
+        <ServicesCard item={item} index={index} key={index} />
+      ))}
+    </div>
+    </div>
+  </section>
 }
 
 export default Services

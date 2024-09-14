@@ -8,6 +8,9 @@ const ServicesCard = ({ item, index }) => {
 
   return (
     <div className='services-card'>
+       <div className="service-index-circle">{index + 1}</div> {/* Index in a rounded circle */}
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
       <h2 className='services-card-title'>{name}</h2>
       <p className='services-card-desc'>{desc}</p>
     
