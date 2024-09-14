@@ -50,7 +50,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="footer-section">
-          <h4>Quick Links</h4>
+          <h4>QUICK LINKS</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
@@ -60,7 +60,7 @@ const Footer = () => {
 
         {/* I Want To Section */}
         <div className="footer-section">
-          <h4>I Want To:</h4>
+          <h4>ACTIONS</h4>
           <ul>
             <li><Link to="/find-doctor">Find a Doctor</Link></li>
             <li><Link to="/request-appointment">Request Appointment</Link></li>
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Support Section */}
         <div className="footer-section">
-          <h4>Support</h4>
+          <h4>SUPPORT</h4>
           <ul>
             <li><Link to="/donate">Donate</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>

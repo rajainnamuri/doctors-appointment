@@ -1,0 +1,76 @@
+.side-panel {
+    position: fixed; /* Keeps the panel fixed on the screen */
+    top: 20px; /* Adjusts the vertical position */
+    right: 20px; /* Adjusts the horizontal position */
+    width: 300px; /* Adjust width based on your design */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Ensure background is set */
+  }
+  
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .ticket-price {
+    margin-top: 0;
+    font-weight: 600;
+    color: #666;
+  }
+  
+  .price {
+    font-size: 16px;
+    line-height: 1.75rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .time-slots {
+    margin-top: 30px;
+  }
+  
+  .slots-heading {
+    margin-top: 0;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .slots-list {
+    margin-top: 12px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .slot-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .slot-day, .slot-time {
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  .book-button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .book-button:hover {
+    background-color: #187bcd;
+  }
+  
