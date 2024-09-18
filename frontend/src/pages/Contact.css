@@ -1,0 +1,60 @@
+/* Container Styling */
+section {
+    padding: 2rem 0;
+  }
+  
+  .max-w-screen-md {
+    max-width: 768px;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Text Styling */
+  h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .text_para {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .lg\\:mb-16 {
+      margin-bottom: 4rem;
+    }
+  }
+  
+  /* Form Styling */
+  .form_label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+  
+  .space-y-8 > * + * {
+    margin-top: 2rem;
+  }
+  

@@ -1,76 +1,102 @@
+
+.p-3 {
+  padding: 3rem;
+
+}
+
+.lg\\:p-5-md {
+  padding:5rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow-panelShadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-30px {
+  margin-top: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-16px {
+  font-size: 16px;
+}
+
+.text-15px {
+  font-size: 15px;
+}
+
+.leading-6 {
+  line-height: 1.5;
+}
+
+.leading-7 {
+  line-height: 1.75;
+}
+
+.text-headingColor {
+  color: #333; /* Replace with desired heading color */
+}
+
+.text-textColor {
+  color: #666; /* Replace with desired text color */
+}
+
+.text_para {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+}
+
+/* Button Styling */
+.w-full {
+  width: 100%;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.btn-md {
+  background-color: #0066cc; /* Button background color */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-md:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+}
+
+/* Right-aligned panel styling */
 .side-panel {
-    position: fixed; /* Keeps the panel fixed on the screen */
-    top: 20px; /* Adjusts the vertical position */
-    right: 20px; /* Adjusts the horizontal position */
-    width: 300px; /* Adjust width based on your design */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Ensure background is set */
-  }
-  
-  .panel-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .ticket-price {
-    margin-top: 0;
-    font-weight: 600;
-    color: #666;
-  }
-  
-  .price {
-    font-size: 16px;
-    line-height: 1.75rem;
-    color: #333;
-    font-weight: 700;
-  }
-  
-  .time-slots {
-    margin-top: 30px;
-  }
-  
-  .slots-heading {
-    margin-top: 0;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .slots-list {
-    margin-top: 12px;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .slot-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  
-  .slot-day, .slot-time {
-    font-size: 15px;
-    line-height: 1.5rem;
-    color: #666;
-    font-weight: 600;
-  }
-  
-  .book-button {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 8px;
-    background-color: #1e90ff;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-  }
-  
-  .book-button:hover {
-    background-color: #187bcd;
-  }
-  
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  width: 300px; 
+  padding-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow-y: auto;
+}
