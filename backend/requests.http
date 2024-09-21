@@ -1,0 +1,15 @@
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "name": "Harsha",
+  "email": "dev@gmail.com",
+  "password": "2121212",
+  "confirmPassword": "2121212",
+  "contact": "1234567890",
+  "age": 30,
+  "gender": "male",
+  "role": "patient",
+  "address": "123 Main St",
+  "photo": "D:\\basic-appointment-app\\doctors-appointment\\frontend\\src\\assets\\images\\doctorImg01.jpg"
+}
