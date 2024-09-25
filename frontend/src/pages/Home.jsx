@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import home2 from '../assets/images/home2.jpg';
-import doc from '../assets/images/doc.png';
+import find_doc_water from '../assets/images/find_doc_water.png';
+import doc from '../assets/images/doc.png'
 import appoint from '../assets/images/appoint.png';
 import './Home.css';
 import { BsArrowRight } from 'react-icons/bs';
@@ -42,7 +43,7 @@ const Home = () => {
           <div className="content">
             <div className="text-container">
               <h1 className="heading">
-                Welcome to ALPHA MEDICAL CARE, We support your journey to health and wellness.
+                Welcome to ALPHA MEDICAL CENTER, We support your journey to health and wellness.
               </h1>
               <p className="paragraph">
                 Book your medical appointments online quickly and easily, from the comfort of your home.
@@ -84,7 +85,7 @@ const Home = () => {
           <div className="grid">
             <div className="service-item">
               <div className="icon-container">
-                <img src={doc} alt="Doctor icon" />
+                <img src={find_doc_water} alt="Doctor icon" />
               </div>
               <h2 className="service-title">Find a Doctor</h2>
               <p className="service-desc">

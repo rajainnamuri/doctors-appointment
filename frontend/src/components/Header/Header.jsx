@@ -5,6 +5,8 @@ import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import { useEffect, useRef } from 'react';
 
+
+
 const navLinks = [
   { path: '/home', display: 'Home' },
   { path: '/doctors', display: 'Find a Doctor' },
