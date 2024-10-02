@@ -1,15 +1,57 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState,useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Auth.css';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { authContext } from '../context/AuthContext.jsx';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const[formData,setFormData] = useState({
+    email:"",
+    password:"",
+  })
+  const navigate = useNavigate();
+  const {dispatch} = useContext(authContext);
 
-  const handleSubmit = (e) => {
+  const handleInputChange = e =>{
+    setFormData({ ...formData , [e.target.name] : e.target.value});
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle login logic here
     console.log('Login submitted', { email, password });
+
+    try{
+      const res = await fetch(`http://localhost:5173/auth/login`,{
+        method:"post",
+        headers:{"Content-Type":"application/json",},
+        body:JSON.stringify(formdata),
+      });
+
+      const result = await res.json();
+
+      if(!res.ok)
+      {
+        throw new Error(result.message);
+      }
+
+      dispatch({
+        type:'LOGIN_SUCCESS',
+        payload:{
+          user:result.data,
+          token:result.token,
+          role:result.role,
+        }
+      })
+
+      navigate('/home');
+    }
+    catch(err){
+      toast.error(err.message); 
+    }
   };
 
   return (
@@ -23,7 +65,8 @@ const Login = () => {
           <input 
             type="email" 
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            //onChange={(e) => setEmail(e.target.value)}
+            onChange={handleInputChange}
             required
           />
         </div>

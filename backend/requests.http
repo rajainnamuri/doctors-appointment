@@ -1,15 +1,72 @@
-POST http://localhost:5000/api/v1/auth/register
+
+### Insert data into doctor-data collection
+POST http://localhost:5000/doct-data
 Content-Type: application/json
 
 {
-  "name": "Harsha",
-  "email": "dev@gmail.com",
-  "password": "2121212",
-  "confirmPassword": "2121212",
+  "name": "KP",
+  "email": "kp@gmail.com",
+  "password": "00001111",
+  "confirmPassword": "00001111",
   "contact": "1234567890",
-  "age": 30,
+  "age": 20,
   "gender": "male",
-  "role": "patient",
+  "role": "doctor",
   "address": "123 Main St",
-  "photo": "D:\\basic-appointment-app\\doctors-appointment\\frontend\\src\\assets\\images\\doctorImg01.jpg"
+  "photo": " "
 }
+
+
+### Insert data into doctor-data collection
+POST http://localhost:5000/doct-data
+Content-Type: application/json
+
+{
+  "name": "lucky",
+  "email": "lucky@gmail.com",
+  "password": "00001111",
+  "confirmPassword": "00001111",
+  "contact": "1234567890",
+  "age": 20,
+  "gender": "female",
+  "role": "doctor",
+  "address": "123 Main St",
+  "photo": " "
+}
+
+
+### Insert data into patient-data collection
+POST http://localhost:5000/pati-data
+Content-Type: application/json
+
+{
+  "name": "drithi",
+  "email": "drithi@gmail.com",
+  "password": "00001111",
+  "confirmPassword": "00001111",
+  "contact": "1234567890",
+  "age": 20,
+  "gender": "female",
+  "role": "doctor",
+  "address": "123 Main St",
+  "photo": " "
+}
+
+
+### doctor login
+### Get a user by email (protected route)
+GET http://localhost:5000/users/kp@gmail.com
+
+
+### Login with the new user
+POST http://localhost:5000/kp@gmail.com
+Content-Type: application/json
+
+{
+  "email": "kp@gmail.com",
+  "password": "00001111"
+}
+
+### get all users
+GET http://localhost:5000/patients
+Content-Type: application/json
