@@ -262,6 +262,11 @@
 
 
 
+
+
+
+
+/*  end */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Auth.css';
@@ -337,7 +342,7 @@ const Signup = () => {
         <form className="auth-form" onSubmit={handleSubmit}>
           <h2 className="auth-heading">Register</h2>
           {/* Display error message */}
-          {err.length !== 0 && <p className="fs-2 text-danger text-center">{err}</p>}
+          {err.length !== 0 && <p className="text-center fs-2 text-danger">{err}</p>}
 
           <div className="form-group">
             <label>Register as</label>

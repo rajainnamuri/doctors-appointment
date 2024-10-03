@@ -2,7 +2,7 @@ import React from 'react';
 import './DoctorAbout.css';  // Import the CSS file
 import { formateDate } from '../../utils/formateDate';  // Import the corrected function
 
-const DoctorAbout = () => {
+const DoctorAbout = ({name,about,qualifications,experiences}) => {
   return (
     <div className="doctor-about-container">
       <div>
