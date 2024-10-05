@@ -13,14 +13,14 @@ const Profile = () => {
     qualifications: [{ startingDate: '', endingDate: '', degree: '', university: '' }],
     experiences: [{ startingDate: '', endingDate: '', position: '', hospital: '' }],
     timeSlots: [{ day: '', startingTime: '', endingTime: '' }],
-    about:''
+    about:'',
     photo:null,
   });
 useEffect(()=>{
   setFormData({
     name:doctorData?.name,
     email: doctorData?.email,
-    phone: doctorData?phone.,
+    phone: doctorData?.phone,
     bio: doctorData?.bio,
     gender: doctorData?.gender,
     specialization: doctorData?.specialization,
@@ -31,7 +31,7 @@ useEffect(()=>{
     about:doctorData?.about,
     photo:doctorData?.photo,
   })
-},())
+},)
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
