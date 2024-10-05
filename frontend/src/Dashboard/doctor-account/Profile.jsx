@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
 
 const Profile = () => {
@@ -14,8 +14,24 @@ const Profile = () => {
     experiences: [{ startingDate: '', endingDate: '', position: '', hospital: '' }],
     timeSlots: [{ day: '', startingTime: '', endingTime: '' }],
     about:''
+    photo:null,
   });
-
+useEffect(()=>{
+  setFormData({
+    name:doctorData?.name,
+    email: doctorData?.email,
+    phone: doctorData?phone.,
+    bio: doctorData?.bio,
+    gender: doctorData?.gender,
+    specialization: doctorData?.specialization,
+    ticketprice: doctorData?.ticketprice,
+    qualifications:doctorData?.qualifications,
+    experiences: doctorData?.experiences,
+    timeSlots: doctorData?.timeSlots,
+    about:doctorData?.about,
+    photo:doctorData?.photo,
+  })
+},())
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

@@ -2,14 +2,7 @@ import React, { useEffect } from 'react'
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Auth.css';
-
-
-
 /* NEED TO BE MODIFIED LATER */
-
- 
-
-  
   const Profile = () => {
   const [role, setRole] = useState('');
   const [name, setName] = useState('');

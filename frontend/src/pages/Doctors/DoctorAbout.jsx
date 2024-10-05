@@ -17,14 +17,16 @@ const DoctorAbout = ({name,about,qualifications,experiences}) => {
       <div className="education-section">
         <h3 className="education-heading">Education</h3>
         <ul className="education-list">
-          <li className="education-item">
+          {qualifications?.map((item,index)=> <li className="education-item">
             <div>
-              <span className="date">{formateDate('2014-09-13')} - {formateDate('2016-09-13')}</span>
-              <p className="degree">PhD in Surgery</p>
-              <p className="degree">Apollo Hospital, India</p>
-            </div>
-          </li>
-
+              <span className="date">{formateDate({item.startingDate})} - {formateDate(item.endingDate)}</span>
+              <p className="degree">{item.degree}</p>
+              </div>
+              <p className="degree">{item.university}</p>
+          </li>)}
+          </ul>
+          </div>
+          
           <li className="education-item">
             <div>
               <span className="date">{formateDate('2010-04-12')}</span>
@@ -32,20 +34,18 @@ const DoctorAbout = ({name,about,qualifications,experiences}) => {
               <p className="degree">Apollo Hospital, New York</p>
             </div>
           </li>
-        </ul>
-      </div>
+      
 
       <div className="experience-section">
         <h3 className="education-heading">Experience</h3>
         <ul className="experience-list">
-          <li className="experience-item">
-            <span className="role">Sr. Surgeon</span>
-            <p className="degree">Apollo Hospital, New York</p>
-          </li>
-          <li className="experience-item">
-            <span className="role">Sr. Surgeon</span>
-            <p className="degree">Apollo Hospital, New York</p>
-          </li>
+          {experiences?.map((item,index)=><li key={index} className="experience-item">
+          <span className="date">{formateDate({item.startingDate})} - {formateDate(item.endingDate)}</span>
+            <p className="role">{item.position}</p>
+        
+            <p className="degree">{item.hospital}</p>
+          </li>)}
+      
         </ul>
       </div>
     </div>

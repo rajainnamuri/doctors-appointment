@@ -7,6 +7,7 @@ import Tabs from './Tabs';
 import starIcon from '../../assets/images/starIcon.png';
 import DoctorAbout from './../../pages/Doctors/DoctorAbout';
 import Profile from './Profile';
+import Appointments from './Appointment';
 
 function Dashboard() {
 
@@ -58,29 +59,29 @@ function Dashboard() {
                     {data.specialization} Surgeon
                   </span>
 
-                <h3 className="text-[22px] leading-9 font-bold text-headingColor mt-3">harsha</h3>   
+                <h3 className="text-[22px] leading-9 font-bold text-headingColor mt-3">{data.name}</h3>   
                   
                   <div className="flex items-center gap-[6px]">
                     <span className='flex items-center gap-[6px] text-headingColor text-[14px] leading-5 lg:text-[16px] lg:leading-6 font-semibold '>
                       <img src={starIcon} alt="" />
-                    4.5
+                    {data.averageRating}
                     </span>
 
                     <span className='flex items-center gap-[6px] text-headingColor text-[14px] leading-5 lg:text-[16px] lg:leading-6 font-semibold '>
                     
-                    (231)
+                    ({data.totalRating})
                     </span>
                     
                   </div>
-                  <p className='text__para font-[15px] lg:max-w-[399px] leading-6'>doctor bio</p>
+                  <p className='text__para font-[15px] lg:max-w-[399px] leading-6'>{data?.bio}</p>
                 </div>
               </div>
               <DoctorAbout name={data.name} about={data.about} qualifications={data.qualifications}
               experiences={data.experience}/>
               </div>
               }
-            {tab==='appointments' && <div>appointments</div>}
-            {tab==='settings' && <Profile/>}
+            {tab==='appointments' && <Appointments appointments={data.appointments}/>}
+            {tab==='settings' && <Profile doctorData={data}/>}
                 
               </div>
                 
